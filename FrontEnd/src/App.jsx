@@ -20,6 +20,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./pages/Footer";
 import GenerateWebsite from "./pages/GenerateWebsite";
+import AIContentGeneration from "./pages/features/AIContentGeneration";
+import OneClickDeploy from "./pages/features/OneClickDeploy";
 
 const Dashboard = () => (
   <div className="container mt-3">
@@ -189,8 +191,11 @@ function App() {
             }
           />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/features/ai-content" element={<FeaturesAICotent />} />
-          <Route path="/features/deployment" element={<FeaturesDeployment />} />
+          <Route
+            path="/features/ai-content"
+            element={<AIContentGeneration />}
+          />
+          <Route path="/features/deployment" element={<OneClickDeploy />} />
           <Route
             path="*"
             element={
